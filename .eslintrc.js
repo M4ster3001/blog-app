@@ -12,7 +12,6 @@ module.exports = {
         node: true,
         es6: true,
     },
-
     settings: {
         react: {
             version: "detect",
@@ -72,4 +71,14 @@ module.exports = {
         "import/prefer-default-export": "off",
     },
     ignorePatterns: ["node_modules", "./src/styles"],
+    "overrides": [
+        {
+            "files": ["*.graphql"],
+            "parser": "@graphql-eslint/eslint-plugin",
+            "plugins": ["@graphql-eslint"],
+            "rules": {
+                "@graphql-eslint/known-type-names": "error"
+            }
+        }
+    ]
 };

@@ -1,6 +1,6 @@
 import { apolloCon } from 'con/apolloCon'
 import { GET_ALL_POSTS } from 'graphql/queries'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 import Head from 'next/head'
 import React from 'react'
 
@@ -47,7 +47,7 @@ export default function Home({ posts }: HomeProps) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async context => {
+export const getServerSideProps: GetServerSideProps = async context => {
   const { data, loading, error } = await apolloCon.query({
     query: GET_ALL_POSTS
   })
