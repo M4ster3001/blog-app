@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "removeComments": true,
+    "importsNotUsedAsValues": "remove",
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@const/*": [
+        "const/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@graphqlQueries/*": [
+        "queries/*"
+      ]
+    },
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
