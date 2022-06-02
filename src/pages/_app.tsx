@@ -1,6 +1,6 @@
-import { ApolloProvider } from "@apollo/client"
-import { apolloCon } from "con/apolloCon"
-import { AppProps } from "next/app"
+import { ApolloProvider } from '@apollo/client'
+import { apolloCon } from 'con/apolloCon'
+import { AppProps } from 'next/app'
 
 import '@styles/global.css'
 
